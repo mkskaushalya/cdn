@@ -525,45 +525,6 @@ footer {
         padding: 20px 50px;
         row-gap: 10px;
     }
-    .login-reg div input{
-        width: 100%;
-        padding: 5px;
-        font-size: 1.1rem;
-    }
-    .login-reg div button{
-        width: 100%;
-        padding: 10px 5px;
-        font-size: 1.1rem;
-        background-color: #090;
-        color: #fff;
-        font-weight: 700;
-        border: 0;
-    }
-    .login-reg div h3{
-        width: 100%;
-        text-align: center;
-        background-color: #0001;
-        padding: 10px 0;
-    }
-    
-    
-    .headline, .error, .massege, .intro, .bmassege {
-        text-align: center;
-        padding: 10px 0;
-    }
-    
-    .headline, .massege {
-        background-color: #dfd;
-        color: #090;
-    }
-    .error {
-        background-color: #fdd;
-        color: #900;
-    }
-    .intro, .bmassege{
-        background-color: #ffd;
-        color: #990;
-    }
     
     
     
