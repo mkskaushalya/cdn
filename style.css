@@ -380,7 +380,7 @@ section{
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
     width: 100%;
 }
-.book-cont .book-form form, .book-cont .book-form div{
+.book-cont .book-form form, .book-cont .book-form div, .verify .book-form form{
     margin-top: 2rem;
     padding: 1.5rem 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 29px 0px;
@@ -390,7 +390,7 @@ section{
     /* padding: 20px 50px; */
     row-gap: 10px;
 }
-.book-cont div input{
+.book-cont div input, .verify div form input{
     width: 100%;
     padding: 5px;
     font-size: 1.1rem;
@@ -403,7 +403,7 @@ section{
     padding: 5px;
     font-size: 1.1rem;
 }
-.book-cont div button{
+.book-cont div button, .verify div form button{
     width: 100%;
     padding: 10px 5px;
     font-size: 1.1rem;
@@ -412,7 +412,7 @@ section{
     font-weight: 700;
     border: 0;
 }
-.book-cont div form h3, .book-cont .booking-table .cont h3, .bapprt .cont h3, .book-cont .book-form div h3{
+.book-cont div form h3, .book-cont .booking-table .cont h3, .bapprt .cont h3, .book-cont .book-form div h3, .verify div form h3{
     width: 100%;
     text-align: center;
     background-color: #0001;
@@ -446,6 +446,18 @@ section{
     background-color: #090;
 }
 
+
+/* Verify Page */
+.verify{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.verify div{
+    max-width: 500px;
+    width: 100%;
+}
 
 /* =========== Footer ========== */
 
