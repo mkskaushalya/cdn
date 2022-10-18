@@ -456,3 +456,115 @@ footer {
     font-weight: 600;
     margin-top: 2rem;
 }
+
+
+/* ========= Mobile Responsive ========== */
+@media (max-width: 500px){
+
+    section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    
+    .avai-book .search{
+        flex-direction: column;
+        row-gap: 10px;
+        width: 100%;
+    }
+    .avai-book .search input{
+        padding: 10px;
+        width: 100%;
+        max-width: 300px;
+    }
+    .avai-book .search button{
+        width: 100%;
+        max-width: 300px;
+        
+    }
+    
+    .available .book-card {
+        min-width: 250px;
+        min-height: 250px;
+    }
+    
+    .available .book-card .up{
+        font-size: 1.2rem;
+        height: 125px;
+    
+    }
+    .available .book-card .down button{
+        height: 125px;
+        width: 250px;
+        font-size: 1.5rem;
+    
+    }
+    
+    .available {
+        width: 100%;
+        row-gap: 2rem;
+
+    }
+
+
+
+
+
+    /* Login page */
+    .log-reg-div{
+        flex-direction: column;
+    }
+    .login-reg .login, .login-reg .register{
+        width: 100%;
+    }
+    
+    .login-reg div form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 50px;
+        row-gap: 10px;
+    }
+    .login-reg div input{
+        width: 100%;
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    .login-reg div button{
+        width: 100%;
+        padding: 10px 5px;
+        font-size: 1.1rem;
+        background-color: #090;
+        color: #fff;
+        font-weight: 700;
+        border: 0;
+    }
+    .login-reg div h3{
+        width: 100%;
+        text-align: center;
+        background-color: #0001;
+        padding: 10px 0;
+    }
+    
+    
+    .headline, .error, .massege, .intro, .bmassege {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    .headline, .massege {
+        background-color: #dfd;
+        color: #090;
+    }
+    .error {
+        background-color: #fdd;
+        color: #900;
+    }
+    .intro, .bmassege{
+        background-color: #ffd;
+        color: #990;
+    }
+    
+    
+    
+}
