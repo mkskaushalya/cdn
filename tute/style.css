@@ -1,0 +1,384 @@
+/* ============= import montserret font ============= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,600&display=swap');
+
+:root {
+    /* colors */
+    --darkgray:#505050;
+    --gray :#707070;
+    --gray1:#101010;
+    --gray2:#202020;
+    --gray3:#303030;
+    --gray4:#404040;
+    --gray5:#505050;
+    --gray6:#606060;
+    --gray7:#707070;
+    --gray8:#808080;
+    --gray9:#909090;
+    --graya:#a0a0a0;
+    --grayb:#b0b0b0;
+    --grayc:#c0c0c0;
+    --grayd:#d0d0d0;
+    --graye:#e0e0e0;
+    --grayf:#f0f0f0;
+
+
+    /* margins */
+    --deskmargin:5rem;
+    --halfmargin:3rem;
+    --mobmargin:1rem;
+
+    /* padding */
+    --main-padding: 0 5rem;
+    --deskpadding:0 5rem;
+    --halfpadding:0 3rem;
+    --mobpadding:0 1rem;
+
+
+    /* Heights */
+    --nav-height:80px;
+
+
+    /* Font Sizes */
+
+    --font-size-1: 1rem;
+    --font-size-2: 2rem;
+    --font-size-3: 3rem;
+    --font-size-4: 1.3rem;
+    --font-size-5: 1.9rem;
+    --font-size-6: 2.5rem;
+
+
+    /* Font Weights */
+    --font-weight-1: 100;
+    --font-weight-2: 200;
+    --font-weight-3: 300;
+    --font-weight-4: 400;
+    --font-weight-5: 500;
+    --font-weight-6: 600;
+    --font-weight-7: 700;
+}
+
+*{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+ul{
+    list-style: none;
+}
+section{
+    padding: var(--main-padding);
+}
+
+
+/* ================= NAV BAR STYLE ============= */
+
+
+header nav{
+    height: var(--nav-height);
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--main-padding);
+    position: fixed;
+    z-index: 10;
+    
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+
+/* left div */
+header nav .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    z-index: 10;
+}
+
+header nav .left img{
+    width: 50px;
+    height: 50px;
+}
+header nav .left h1{
+    color:var(--gray);
+    font-weight: 600;
+    font-size: var(--font-size-5);
+    /* font-size: 30px; */
+}
+
+header nav .right{
+    min-width: 60%;
+}
+
+header nav .right ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+}
+
+header nav .right ul a li{
+    color: var(--blue);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-6);
+    display: inline-block;
+}
+
+
+
+/* Hamburger */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display:block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: blue;
+    border-radius: 1px;
+
+
+    
+}
+
+/* ============================================= */
+
+
+
+/* ================= HOME SECTION STYLE ============= */
+#home{
+    min-height: 100vh;
+    background-image: linear-gradient(#DFE6F6, #F7FBFE);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#home .left, #home .right{
+    width: 50%;
+    /* min-height: 100vh; */
+    display: flex;
+    /* background-color: #000; */
+}
+
+#home .left{
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+#home .left .conts{
+    /* max-width: 20rem; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+#home .left .conts h2{
+    color: var(--darkgray);
+    font-size: var(--font-size-3);
+}
+#home .left .conts h3{
+    color: var(--gray);
+    font-size: var(--font-size-2);
+    font-weight: 400;
+}
+#home .left .conts button{
+    color: var(--darkgray);
+    font-size: var(--font-size-3);
+    background-color: #0000;
+    border: 4px solid var(--darkgray);
+    border-radius: 40px;
+    width: 19rem;
+}
+#home .right{
+    align-items: center;
+    justify-content: center;
+}
+#home .right img{
+    max-width: 80%;
+}
+/* ============================================= */
+
+
+
+/* ================= SERVICE SECTION STYLE ============= */
+/* ============================================= */
+
+
+
+/* ================= RESPONSIVE ============= */
+
+/* ============= MAX WIDTH 900px ============ */
+@media screen and (max-width:900px){
+    :root {
+        --main-padding: 0 3.5rem;
+
+        /* font sizes */
+        --font-size-1: 0.8rem;
+        --font-size-2: 1.7rem;
+        --font-size-3: 2.5rem;
+        --font-size-4: 1.1rem;
+        --font-size-5: 1.7rem;
+        --font-size-6: 2.2rem;
+    }
+}
+/* ==============END 768px ================ */
+
+@media screen and (max-width:768px){
+    :root {
+        --main-padding: 0 3rem;
+
+        /* font sizes */
+        --font-size-1: 0.7rem;
+        --font-size-2: 1.6rem;
+        --font-size-3: 2.3rem;
+        --font-size-4: 1rem;
+        --font-size-5: 1.5rem;
+        --font-size-6: 1.9rem;
+    }
+
+
+
+
+    header nav .right{
+        min-width: 100%;
+    }
+    
+    header nav .right ul {
+        padding-top: 5rem;
+        position: absolute;
+        left: -100%;
+        top:0;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        row-gap: 0.7rem;
+        height: 100vh;
+        background-color: #ddf1;
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 9;
+        transition: all 0.3s ease-in-out;
+    }
+
+    header nav .right ul.active {
+        
+        left: 0%;
+        
+    }
+    
+    header nav .right ul a li{
+        color: #0000f0;
+        text-shadow: 0 1px 2px rgb(255, 255, 255);
+        font-size: var(--font-size-5);
+        font-weight: var(--font-weight-6);
+        display: inline-block;
+    }
+
+
+    /* Hamburger */
+    
+    .hamburger{
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        display: block;
+        z-index: 11;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        background-color: red;
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        background-color: red;
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+/* ==============END 768px ================ */
+
+/* ==============END 700px ================ */
+
+@media screen and (max-width:700px){
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in-out;
+    }
+        /* left div */
+
+
+        #home{
+            /* padding-top: 3rem; */
+            flex-direction: column;
+            justify-content: center;
+        }
+        #home .left, #home .right{
+            width: 100%;
+        }
+        
+        #home .left{
+            z-index: 3;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            /* background-color: #fff8; */
+        }
+        #home .left .conts button{
+            color: var(--darkgray);
+            font-size: var(--font-size-3);
+            background-color: #0000;
+            border: 4px solid var(--darkgray);
+            border-radius: 40px;
+            width: 100%;
+            max-width: 19rem;
+        }
+        #home .left .conts{
+            text-align: center;
+            width: 100%;
+            align-items:center;
+        }
+
+        #home .right{
+            position: absolute;
+            z-index: 1;
+            align-items: center;
+            justify-content: center;
+        }
+        #home .right img{
+            /* display: none; */
+            max-width: 270px;
+            opacity: 0.3;
+        }
+
+        #home .overlay{
+            position: absolute;
+            background-image: linear-gradient(#DFE6F688, #F7FBFE88);
+            backdrop-filter: blur(2px);
+            z-index: 2;
+            width: 100%;
+            height: 100vh;
+        }
+   
+}
+/* ==============END 700px ================ */
+
+/* ============================================= */
