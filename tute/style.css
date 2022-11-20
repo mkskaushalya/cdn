@@ -129,7 +129,7 @@ header nav .right ul {
 }
 
 header nav .right ul a li{
-    color: var(--blue);
+    color: var(--gray);
     font-size: var(--font-size-4);
     font-weight: var(--font-weight-6);
     display: inline-block;
