@@ -1,0 +1,185 @@
+.home-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    background-image: url("../img/bg-home.webp");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+.home{
+    background-color: transparent;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.overlay{
+    /* padding: 0 23rem; */
+    width: 100%;
+    background-color:  #1139;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.overlay h2{
+    padding: 0.5rem;
+    color:#fff;
+    font-size: var(--font-25);
+    font-weight: 600;
+}
+.overlay p{
+    padding: 0.5rem;
+    border-top: 3px solid #fff;
+    text-align: center;
+    color:#fff;
+    font-size: var(--font-15);
+    font-weight: 400;
+    max-width: 600px;
+}
+
+
+
+
+/* ========== VISION ============ */
+.vision{
+    background-color: #fff;
+    row-gap: 1rem;
+}
+.vision-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 0 20rem; */
+}
+.vision-cont h2{
+    padding: 0.5rem;
+    color:var(--gray);
+    font-size: var(--font-20);
+    font-weight: 400;
+}
+.vision-cont p{
+    max-width: 600px;
+    padding: 0.5rem;
+    border-top: 3px solid var(--gray);
+    text-align: center;
+    color:var(--light-gray);
+    font-size: var(--font-15);
+    font-weight: 400;
+}
+.vision a button{
+    background-color: transparent;
+    border: 2px solid var(--ice-blue);
+    border-radius: 0;
+    color:var(--ice-blue);
+    font-weight: 300;
+}
+.vision a:hover button{
+    background-color: var(--ice-blue);
+    border: 2px solid var(--ice-blue);
+    border-radius: 0;
+    color:#fff;
+    font-weight: 300;
+}
+
+
+/* ====== Aim ===== */
+/* .aim-bg{
+    position: absolute;
+    left: 0;
+    z-index: -4;
+    background-image: url("../img/aim-bg.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+} */
+.aim{
+    background-image: url("../img/aim-bg.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0;
+    /* min-height: 100vh; */
+    width: 100%;
+}
+
+.aim-overlay{
+    width: 100%;
+    padding: 2rem 0;
+    background-color:#1139;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aim-overlay h2{
+    color:#fff;
+    padding: 0.5rem;
+    font-size: var(--font-20);
+    font-weight: 400;
+}
+.aim-overlay p{
+    max-width: 600px;
+    padding: 0.5rem;
+    border-top: 3px solid #fff;
+    text-align: center;
+    color:#fff;
+    text-align: center;
+    font-size: var(--font-15);
+    font-weight: 400;
+}
+
+/* ===== Project ====== */
+
+.project-cont{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+.project-card{
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+.project-card .proj-img{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-card .proj-img img{
+    z-index: 1;
+    width: 300px;
+    transition: all ease 0.3s;
+
+}
+.project-card:hover .proj-img img{
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all ease 0.3s;
+}
+.project-card .describe{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}

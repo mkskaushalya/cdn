@@ -1,0 +1,132 @@
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact{
+    width: 100%;
+    display: flex;
+}
+footer .contact div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+footer .contact .g-map iframe{
+    width: 100%;
+    min-height: 500px;
+    border: none;
+}
+footer .contact .cont-details{
+    background-color: var(--ice-blue);
+    color:#fff;
+    padding: 2rem;
+}
+footer .contact .cont-details table tbody{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+footer .contact .cont-details table tbody tr{
+    display: flex;
+    column-gap: 1.5rem;
+}
+.fa-phone-volume{
+    transform: rotate(-45deg);
+}
+
+footer .contact .cont-details table tbody td:nth-child(1){
+    font-size:var(--font-20);
+}
+
+footer .contact .cont-details table tbody td{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--font-15);
+}
+
+footer .feedback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    padding: var(--padding-desk);
+}
+footer .feedback form{
+    max-width: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+footer .feedback form input{
+    padding: 0.5rem;
+    font-size: var(--font-10);
+}
+
+footer .feedback form textarea{
+    resize: vertical;
+    padding: 0.5rem;
+    font-size: var(--font-10);
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 5rem;
+    height: 5rem;
+    max-height: 15rem;
+}
+
+footer .feedback form button{
+    border-radius: 3px;
+    padding: 0.5rem;
+    /* font-size: var(--font-10); */
+
+
+
+}
+
+@media (max-width:768px) {
+    footer .contact{
+        flex-direction: column;
+    }
+    footer .contact div{
+        width: 100%;
+    }
+    footer .feedback{
+        /* padding: var(--padding-tab); */
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============ Copyright ============ */
+footer .copyright{
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--ice-blue);
+    color:#fff;
+}
+footer .copyright p{
+   font-size: var(--font-10);
+}

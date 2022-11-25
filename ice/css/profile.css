@@ -1,0 +1,193 @@
+.profile{
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+}
+.profile-container{
+    /* width: 900px; */
+    width: 100%;
+    /* background-color: #333; */
+    min-height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+/* profile-container content */
+.profile-container .left, .profile-container .middle, .profile-container .right{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+.profile-container .left .main-profile, .profile-container .left .profile-contact, .profile-container .middle .add, .middle .post-container .post, .profile-container .right div{
+    background-color: #223;
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+
+}
+
+.profile-container .left, .profile-container .right{
+    width: 29%;
+}
+
+.profile-container .middle{
+    width: 40%;
+    
+}
+
+
+/* .profile-container .left */
+.profile-container .left{
+    /* padding: 5px; */
+}
+
+
+.main-profile{
+    padding: 5px;
+    text-align: center;
+}
+.main-profile .pro-pic-cont{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main-profile .pro-pic-cont .pro-pic{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+
+.main-profile .details{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    align-items: center;
+    justify-content: center;
+}
+/* profile-contact UL */
+/* .profile-contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.profile-contact table{
+    /* margin-top: 10px; */
+
+}
+
+.profile-contact table tr td:first-child{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-align: center;
+    
+}
+
+
+
+
+
+/* Middle */
+.middle .add{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+.middle .add div{
+    background-color: #fff2;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.middle .add .post .fa-photo-video{
+    color: var(--ice-blue);
+}
+.middle .add .research .fa-file-invoice{
+    color: greenyellow;
+}
+.middle .add .fa-blog{
+    color: red;
+}
+
+
+
+/* Post Section */
+
+.middle .post-container{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.middle .post-container .post{
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+}
+
+.middle .post-container .post div{
+    padding: 10px;
+}
+
+.middle .post-container .post .media{
+    padding: 0px;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+
+
+/* Right */
+.right .education{
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.right .education div{
+    padding: 0;
+}
+.right .education .edu-profile{
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+
+}
+.right .education .edu-profile .image{
+    /* background-color: #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    max-width: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    
+}
+
+
