@@ -10,6 +10,7 @@
 .profile-container{
     /* width: 900px; */
     width: 100%;
+    flex-wrap: wrap;
     /* background-color: #333; */
     min-height: 100vh;
     display: flex;
@@ -51,7 +52,7 @@
 
 
 .main-profile{
-    padding: 5px;
+    /* padding: 5px; */
     text-align: center;
 }
 .main-profile .pro-pic-cont{
@@ -190,4 +191,55 @@
     
 }
 
+
+@media screen and (max-width:1000px){
+    .profile-container .left, .profile-container .middle, .profile-container .right{
+        min-height: 100%;  
+    }
+    .profile-container{
+        width: 100%;
+        flex-direction: row;
+        row-gap: 15px;
+        /* align-items: start;
+        justify-content: space-between; */
+    }
+
+    .profile-container .middle{
+        width: 100%;
+    }
+    .profile-container .left, .profile-container .right{
+        width: 49%;
+    }
+    .profile-container .right{
+        order: 1;
+    }
+    .profile-container .middle {
+        order: 2;
+    }
+    
+}
+
+@media screen and (max-width:768px){
+    .profile-container .left, .profile-container .middle, .profile-container .right{
+        min-height: 100%;  
+    }
+    .profile-container{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 15px;
+        /* align-items: start;
+        justify-content: space-between; */
+    }
+
+    .profile-container .left, .profile-container .right, .profile-container .middle{
+        width: 100%;
+    }
+    .profile-container .right{
+        order: 1;
+    }
+    .profile-container .middle {
+        order: 2;
+    }
+    
+}
 
