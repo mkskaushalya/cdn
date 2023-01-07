@@ -66,13 +66,13 @@
 .itemcard .descr{
     text-align: left;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: var(--font1);
     padding: 0 10px;
 }
 .itemcard .price{
     text-align: justify;
     width: 100%;
-    font-size: 1.4rem;
+    font-size: var(--font2);
     padding: 0 10px;
     font-weight: 600;
 }
@@ -119,11 +119,11 @@
  }
  .announcement .anntitle{
     font-weight: 600;
-    font-size: 1.4rem;
+    font-size: var(--font2);
  }
  .announcement .anndesc{
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size:var(--font1);
  }
 
   @media screen and (max-width: 900px) {

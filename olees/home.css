@@ -6,6 +6,17 @@
   font-family: "Calibri";
 }
 
+:root{
+  --font0:1rem;
+  --font0:1rem;
+  --font1:1.1rem;
+  --font2:1.2rem;
+  --font3:1.3rem;
+  --font3:1.4rem;
+  --font8:1.8rem;
+}
+
+
 img{
   max-width: 100%;
 }
@@ -114,7 +125,7 @@ a{
 .logo-bar form input, .logo-bar form button{
   height: 40px;
   border: 2px solid #21618C;
-  font-size: 1.2rem;
+  font-size: var(--font1);
   /* border-radius: 5px; */
 }
 
@@ -133,7 +144,7 @@ a{
   width: 100px;
   color: #fff;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: var(--font2);
   transition: all ease-in-out 0.3s;
   /* max-width: 400px;
   width: 100%; */
@@ -169,7 +180,7 @@ a{
   font-family: 'Calibri';
   display: flex;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: var(--font1);
   align-items: center;
   justify-content: stretch;
   width: 100%;
@@ -284,7 +295,7 @@ footer .useful div a{
 footer .useful div a span{
   width: 100%;
   color: #000;
-  font-size: 1.2rem;
+  font-size: var(--font1);
   font-weight: bold;
   text-align: center;
 }
@@ -293,12 +304,12 @@ footer .useful div ul a li, footer .useful div .address{
   padding: 0.5rem;
   text-align: center;
   color: #444;
-  font-size: 1.1rem;
+  font-size: var(--font0);
   font-weight: 600;
 }
 
 footer .useful .feedback{
-  padding-bottom: 1rem;
+  padding-bottom: var(--font0);
 }
 footer .useful .feedback form{
   width: 100%;
@@ -309,7 +320,7 @@ footer .useful .feedback form{
 
 footer .useful .feedback form input, footer .useful .feedback form button{
   width: 100%;
-  font-size: 1.3rem;
+  font-size: var(--font2);
   height: 50px;
   border-radius: 4px;
   padding: 0 15px;
@@ -325,7 +336,7 @@ footer .useful .feedback form button{
   border: none;
   color: rgb(255, 255, 255);
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: var(--font3);
   font-weight: 500;
 }
 
@@ -346,7 +357,7 @@ footer .linkbar .bestseller{
 }
 footer .linkbar .bestseller a, footer .linkbar .paypal a{
   color: #AAB7B8;
-  font-size: 1.2rem;
+  font-size: var(--font1);
   text-align: center;
 }
 footer .linkbar .paypal {
@@ -425,7 +436,7 @@ footer .copyright p{
 
   }
   .menubar ul a li{
-    font-size: 2rem;
+    font-size: var(--font8);
     /* padding: 5px 0; */
     height: 45px;
     border-bottom: 2px solid #0005;
@@ -443,7 +454,8 @@ footer .copyright p{
     top: 70px;
     flex-direction: column;
     height: 0;
-    justify-content: space-evenly;
+    justify-content: center;
+    row-gap: 20px;
     overflow: hidden;
     transition: all ease-in-out 0.3s;
     
@@ -454,7 +466,7 @@ footer .copyright p{
   .header div{
     flex-direction: column;
     justify-content: space-around;
-    row-gap: 4vw;
+    row-gap: 20px;
     padding: 0;
     height: auto;
   }
@@ -502,7 +514,7 @@ footer .copyright p{
   .logo-bar form input, .logo-bar form button{
     height: 30px;
     border: 2px solid #21618C;
-    font-size: 1rem;
+    font-size: var(--font0);
     /* border-radius: 5px; */
   }
 
