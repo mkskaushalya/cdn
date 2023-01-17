@@ -1,0 +1,147 @@
+.itemformbox{
+    padding: 20px;
+    box-shadow: 0 0 28px -5px #0004;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.itemformbox form.itemform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+
+}
+
+.itemformbox form.itemform .form-lbl, .itemformbox form.itemform .form-input, .itemformbox form.itemform .form-submit, .itemformbox form.itemform .form-input textarea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemformbox form.itemform .form-input input, .itemformbox form.itemform .form-submit button, .itemformbox form.itemform .form-input textarea{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+.itemformbox form.itemform .form-submit button{
+    text-align: center;
+    justify-content: center;
+    background-color: #28B463;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    height: 45px;
+}
+
+.itemformbox form.itemform .form-lbl label{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+
+.itemdetails{
+    padding: 20px;
+    box-shadow: 0 0 28px -5px #0004;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+    width: 100%;
+
+}
+
+.itemdetails .itemdetailcont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 15px;
+}
+.itemdetails .itemdetailcont .itemimg{
+    width: 50%;
+    max-width: 300px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.itemdetails .itemdetailcont .details{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 5px;
+}
+.itemdetails .itemdetailcont .details ul{
+    list-style: none;
+    padding: 10px 0;
+    
+}
+.itemdetails .itemdetailcont .details a{
+    background-color: #28B463;
+    max-height: 50px;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 8px;
+    column-gap: 10px;
+    
+}
+.itemdetails .itemdetailcont .details a img{
+    max-height: 40px;
+
+
+}
+.itemdetails .itemdetailcont .details a span{
+   font-size: 1.2rem;
+   font-weight: bold;
+   color: #fff;
+}
+
+@media screen and (max-width: 550px) {
+    .itemmgmt{
+        padding: 20px;
+    }
+
+    .itemdetails .itemdetailcont{
+        flex-direction: column;
+    }
+
+    .itemdetails .itemdetailcont .itemimg{
+        width: 100%;
+        max-width: 300px;
+        min-width: auto;
+    }
+
+    .itemdetails .itemdetailcont .details a{
+        max-width: 100%;
+        justify-content: center;
+        
+    }
+
+    .itemdetails .itemdetailcont .details{
+        align-items: center;
+    }
+}
