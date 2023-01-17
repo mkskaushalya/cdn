@@ -1,0 +1,122 @@
+.itemmgmt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 40px;
+}
+
+.viewtable{
+    padding: 20px;
+    box-shadow: 0 0 28px -5px #0004;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+}
+
+.viewtable .heading, .viewtable .itemviewlist, .viewtable .additem{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #000;
+}
+
+.viewtable .heading .itemimg, .viewtable .heading .action, .viewtable .heading .itemtitle, .viewtable .heading .itcode, .viewtable .heading .subcat, .viewtable .heading .price, .viewtable .itemviewlist .itemimg, .viewtable .itemviewlist .actionbtn, .viewtable .itemviewlist .itemtitle, .viewtable .itemviewlist .itemcode, .viewtable .itemviewlist .subcat, .viewtable .itemviewlist .price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+}
+.viewtable .heading .itemimg, .viewtable .heading .action, .viewtable .itemviewlist .itemimg, .viewtable .itemviewlist .actionbtn{
+    width: 20%;
+}
+.viewtable .heading .itemtitle, .viewtable .itemviewlist .itemtitle{
+    width: 25%;
+}
+.viewtable .heading .itcode, .viewtable .heading .subcat, .viewtable .itemviewlist .itemcode, .viewtable .itemviewlist .subcat{
+    width: 10%;
+}
+
+.viewtable .heading .price, .viewtable .itemviewlist .price{
+    width: 15%;
+}
+
+.viewtable .itemviewlist .itemimg{
+    padding: 0;
+    height: 150px;
+    /* max-width: 150px; */
+}
+.viewtable .itemviewlist .itemimg a{
+    padding: 0;
+    height: 150px;
+    width: 100%;
+}
+.viewtable .itemviewlist .itemimg a img{
+    max-height: 100%;
+    max-width: 130px;
+    width: 100%;
+}
+
+.viewtable .itemviewlist .actionbtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 3px;
+}
+.viewtable .itemviewlist .actionbtn a{
+    background-color: #28B463;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 2px;
+    border-radius: 8px;
+
+
+}
+
+.viewtable .itemviewlist .actionbtn a img{
+    max-height: 45px;
+    max-width: 45px;
+    width: 100%;
+}
+.viewtable .additem{
+    position: fixed;
+    bottom: 60px;
+    right: 15px;
+    justify-content: flex-end;
+    padding: 0 0 10px 0;
+    border: none;
+    width: 60px;
+    height: 60px;
+}
+.viewtable .additem a{
+    background-color: #28B463;
+    max-height: 75px;
+    max-width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    
+}
+.viewtable .additem a:hover{
+    transform: scale(1.1);
+    
+}
+.viewtable .additem a img{
+    max-height: 100%;
+    max-width: 100%;
+    
+}
