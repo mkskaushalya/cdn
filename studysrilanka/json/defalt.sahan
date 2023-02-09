@@ -1,0 +1,23 @@
+{
+    "head":{
+        "title": "Home",
+        "sistitle": "Study in Sri Lanka",
+        "css":[
+            "css/style.css",
+            "css/root.css",
+            "css/page.css"
+        ]
+    },
+
+    "footer":{
+        "copyright" : {
+            "fromyear": 2023,
+            "toyear" : 2023,
+            "webfootertitle": "Study in Sri Lanka. All Right Reserved."
+
+        },
+        "developer": {
+            "title":"Developed by Sahan Kaushalya"
+        }
+    }
+}
