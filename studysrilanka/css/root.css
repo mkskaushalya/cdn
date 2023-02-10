@@ -258,6 +258,173 @@ ul{
 }
 
 
+
+
+footer{
+    background-color: var(--first-color);
+    padding: var(--main-padding);
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+footer h3{
+    font-size: 1.3rem;
+    /* text-decoration: underline; */
+    width: 100%;
+    color: var(--second-color);
+}
+
+footer .main{
+    padding: 1rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff4;
+}
+footer .main .intro, footer .main .mid, footer .main .useful{
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+
+}
+
+footer .main .intro p{
+    color: var(--grayf0);
+    font-size: 1rem;
+}
+footer .main .useful ul{
+    width: 100%;
+    text-align: end;
+
+}
+footer .main .useful ul li a{
+    color: var(--grayf0);
+    width: 100%;
+    font-size: 1rem;
+
+}
+footer .main .useful ul li a:hover{
+    color: var(--second-color);
+}
+footer .main .useful{
+    align-items: flex-end;
+}
+footer .main .useful h3{
+    text-align: end;
+}
+
+footer .main .social .sociallink{
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer .main .social .sociallink .socialicon{
+    width: 40px;
+    /* background-color: #fff; */
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all ease-in-out 0.3s;
+}
+footer .main .social .sociallink .socialicon:hover{
+    transition: all ease-in-out 0.3s;
+    background-color: #fff;
+    transition-delay: 0.3s;
+}
+
+footer .main .social .sociallink .socialicon svg{
+    width: 25px;
+    height: 25px;
+    fill: var(--white);
+    transition: all ease-in-out 0.3s;
+}
+footer .main .social{
+    display: flex;
+    flex-direction: column;
+
+    /* row-gap: 0.5rem; */
+    align-items: center;
+}
+footer .main .social h3{
+    text-align: center;
+}
+
+footer .main .social .sociallink .socialicon a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .main .social .sociallink .socialicon.facebook{
+    /* background-color: var(--white); */
+}
+footer .main .social .sociallink .socialicon.facebook:hover svg{
+    /* background-color: #0165E1; */
+    fill: #0165E1;
+}
+footer .main .social .sociallink .socialicon.youtube:hover svg{
+    /* background-color: #0165E1; */
+    fill: #ff0000;
+}
+footer .main .social .sociallink .socialicon.linkedin:hover svg{
+    /* background-color: #0165E1; */
+    fill: #0A66C2;
+}
+footer .main .social .sociallink .socialicon.instagram:hover svg{
+    /* background-color: #0165E1; */
+    fill: #C13584;
+}
+footer .main .social .sociallink .socialicon.twitter:hover svg{
+    /* background-color: #0165E1; */
+    fill: #1DA1F2;
+}
+
+footer .nav{
+    padding: 1rem 0;
+}
+
+footer .nav, footer .nav ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .nav ul{
+    max-width: 750px;
+    justify-content: space-between;
+}
+footer .nav ul li a{
+    font-size: 0.9rem;
+    color: var(--grayf0);
+}
+footer .nav ul li a:hover{
+    color: var(--second-color);
+}
+
+footer .copy{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #fff4;
+    
+
+}
+footer .copy p{
+    color: var(--graydf);
+    padding: 1rem 0;
+    font-size: 0.8rem;
+
+}
 @media (max-width:1200px) {
     :root{
         --main-padding: 0 5rem;
@@ -379,5 +546,31 @@ ul{
         transition: all ease-in-out 0.6s;
         /* height: auto; */
         /* padding: 1rem; */
+    }
+
+    footer .main{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    footer .main .intro, footer .main .mid, footer .main .useful{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    
+    }
+
+    footer .main .useful ul{
+        text-align: center;
+    
+    }
+    footer .main .useful{
+        align-items: center;
+    }
+    footer .main .useful h3{
+        text-align: center;
+    }
+
+    footer .nav ul{
+        flex-direction: column;
     }
 }
