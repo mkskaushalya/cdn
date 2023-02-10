@@ -4,6 +4,7 @@
     --first-color: #17173f;
     /* --second-color: #eaa500; */
     --second-color: #f5AF00; /*rgb(245 175 0)*/
+    --hover-sec-color: #f5AF00aa; /*rgb(245 175 0)*/
     --third-color: #b9b8c8;
     --foth-color: #17173fa8;
 
@@ -43,6 +44,34 @@
     transition: all ease-in-out 0.3s;
     
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    height:30px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color:var(--first-color);
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--second-color); 
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-sec-color);
+    transition: all ease-in-out 0.3s;
+  }
+
+
 img{
     max-width: 100%;
     max-height: 100%;
