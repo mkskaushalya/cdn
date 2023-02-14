@@ -1,0 +1,104 @@
+section.loginhome{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 20px;
+    column-gap: 20px;
+}
+
+.loginhome .logincontainer, .loginhome .registercontainer{
+    width: 50%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.loginhome .logincontainer form, .loginhome .registercontainer form{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0 0 28px -5px #0004;
+    border-radius: 8px;
+    overflow: hidden;
+    row-gap: 10px;
+}
+.loginhome div form div{
+    width: 100%;
+}
+.loginhome div form div h3{
+    width: 100%;
+    text-align: center;
+    font-size: 1.3rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+.loginhome div form div input{
+    width: 100%;
+    height: 35px;
+    font-size: 1.1rem;
+    margin-top: -5px;
+    padding-left: 10px;
+    border-radius: 4px;
+    border: 1px solid #0007;
+    outline: none;
+
+}
+.loginhome div form div label{
+    width: 100%;
+    font-weight: 600;
+    padding-top: 10px;
+    height: 100%;
+}
+.loginhome div form div button{
+    width: 100%;
+    font-weight: 600;
+    font-size: 1.1rem;
+    height: 40px;
+    background-color: #28B463;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.loginhome div form .lostpassword{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5px;
+    height: 30px;
+    width: 100%;
+}
+.loginhome div form .lostpassword input{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+}
+.loginhome div form .lostpassword label{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    section.loginhome{
+        width: 100%;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 30px 10px;
+    }
+
+    .loginhome .logincontainer, .loginhome .registercontainer{
+        width: 100%;
+        max-width: 450px;
+    }
+}

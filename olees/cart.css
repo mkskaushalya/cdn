@@ -20,6 +20,7 @@
 
 .cartsec .leftbox{
     max-width: 650px;
+    width: 100%;
 }
 .cartsec .leftbox .heading{
     width: 100%;
@@ -74,6 +75,41 @@
 .leftbox .cartform .itembox div.itemimg{
     padding: 10px;
 }
+.leftbox .cartform .itembox div.sbtotal{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.leftbox .cartform .itembox div.sbtotal .itemdelete{
+    position: absolute;
+    margin-left: 90px;
+}
+.leftbox .cartform .itembox div.sbtotal button{
+    border: none;
+    z-index: 5555;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.leftbox .cartform .itembox span.noitem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color: #FADBD8;
+    /* color: red; */
+    padding: 1rem 0;
+    
+}
+
 .leftbox .cartform .itembox div.itemtitle{
     text-align: left;
     font-weight: normal;
@@ -143,7 +179,33 @@
     align-items: center;
     justify-content: center;
 }
+.backbtn{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    align-items: center;
+}
+.backbtn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #28B463;
+    max-width: 80px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 8px;
+}
 
+.backbtn a img{
+   height: 30px
+}
 @media screen and (max-width: 1000px) {
     .cartsec{
         flex-direction: column;

@@ -13,6 +13,7 @@
     padding: 0 0 10px 0;
 }
 .cart-itembox{
+    max-width: 100%;
     padding: 20px;
     box-shadow: 0 0 28px -5px #0004;
     border-radius: 8px;
@@ -133,6 +134,70 @@
     row-gap: 5px;
     max-width: 600px;
 }
+
+
+
+/* ================================== */
+.popupview{
+    padding: 0;
+    margin: 0;
+    background-color: #0004;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    overflow: auto;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popupview .popcontent .close{
+    /* position: absolute; */
+    color: #aaaaaa;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+.popupview .popcontent .imgslider{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.popupview .popcontent{
+    background-color: #fff;
+    max-width: 500px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+.popupview .popcontent .close:hover, .popupview .popcontent .close:focus{
+    color: #fff;
+    background-color: #f00;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#poploader{
+    display: none;
+}
+
+
+
+
+/* ================================== */
+
+
+
+
 
 @media screen and (max-width: 768px) {
     .cartitem-up{
