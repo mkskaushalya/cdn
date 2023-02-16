@@ -1,0 +1,158 @@
+@import url("root.css");
+@import url("chat.css");
+@import url("form.css");
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+body{
+    background-color: var(--gray1);
+    padding: var(--main-padding);
+    
+}
+
+.flxc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section{
+    display: flex;
+    /* padding: var(--main-padding); */
+}
+
+.navsec{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray3);
+
+
+}
+.navbar{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray3);
+    /* border-radius: 8px 8px 0 0; */
+    overflow: hidden;
+    /* column-gap: 0.5rem; */
+    /* padding: 10px; */
+    /* height: 80px; */
+
+
+}
+
+.navbar form button{
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 0 8px 8px 0;
+    overflow: hidden;
+    background-color: transparent;
+    color: var(--grayf);
+    /* width: 60px; */
+    padding: 0 15px;
+    height: 60px;
+    width: 60px;
+    font-weight: 600;
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    /* border-radius: 30px; */
+}
+.navbar form button i{
+    text-align: center;
+    transition: color ease-in-out 0.3s, background-color ease-in-out 0.3s;
+    color: var(--bluein);
+}
+
+.navbar form button:hover i, .navbar form button.active i{
+    color: var(--gray3);
+
+}
+.navbar form button:hover, .navbar form button.active{
+    border-radius: 0 8px 8px 0;
+    background-color: var(--bluein);
+    color: var(--gray3);
+
+} 
+
+.interface{
+    /* padding: var(--main-padding); */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 60px;
+    width: calc(100% - 60px);
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden auto;
+}
+
+.msgbar{
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    position: fixed;
+    left: 60px;
+    top: -200px;
+    animation: msgbox 5s;
+
+}
+
+@keyframes msgbox {
+    0%   {top:-200px;}
+    10%  {top:-10px;}
+    15%  {top:0px;}
+    25%  {top:0px;}
+    50%  {top:0px;}
+    75%  {top:0px;}
+    85%  {top:0px;}
+    90%  {top:-10px;}
+    100% {top:-200px;}
+  }
+
+  @media screen and (max-width:768px) {
+    .navsec{
+        width: 100%;
+        height: 60px;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar form button, .navbar form button:hover, .navbar form button.active{
+        border-radius: 8px 8px 0 0;
+
+    }
+
+    .interface{
+        width: 100%;
+        left: 0;
+        height: calc(100vh - 60px);
+        top: 0;
+    }
+
+   
+  }
+  
