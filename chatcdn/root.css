@@ -58,4 +58,5 @@
     box-sizing: border-box;
     color:var(--bluecd);
     text-decoration: none;
+    color-scheme: dark;
 }
