@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+/* @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css"); */
+:root{
+    /* colors */
+
+    /* gray */
+    --gray0: #000;
+    --gray1: #111;
+    --gray2: #222;
+    --gray3: #333;
+    --gray4: #444;
+    --gray5: #555;
+    --gray6: #666;
+    --gray7: #777;
+    --gray8: #888;
+    --gray9: #999;
+    --graya: #aaa;
+    --grayb: #bbb;
+    --grayc: #ccc;
+    --grayd: #ddd;
+    --graye: #eee;
+    --grayf: #fff;
+
+    /* Blue pattern */
+    
+    --blue12:#111122;
+    --blue23:#222233;
+    --blue34:#333344;
+    --blue45:#444455;
+    --blue56:#555566;
+    --blue67:#666677;
+    --blue78:#777788;
+    --blue89:#888899;
+    --blue9a:#9999aa;
+    --blueab:#aaaabb;
+    --bluebc:#bbbbcc;
+    --bluecd:#ccccdd;
+    --bluede:#ddddee;
+    --blueef:#eeeeff;
+
+    /* special blue */
+    --bluein:#5555ff;
+    --blue5f:#5500ff;
+    --blue46:#0000ff;
+    --blue4c:#4444cc;
+
+    /* padding */
+    --main-padding: 0 5rem;
+
+    --br8: 8px 8px 8px 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    color:var(--bluecd);
+    text-decoration: none;
+}
