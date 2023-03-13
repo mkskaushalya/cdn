@@ -1,0 +1,67 @@
+#admin{
+    min-height: 100vh;
+    padding: var(--main-padding);
+    padding-top: 155px;
+
+}
+@media (max-width:768px) {
+    #admin{
+        padding-top: 55px !important;
+
+    }
+}
+#addoc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#addoc form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+#addoc form h3{
+    font-size: 1.8rem;
+}
+#addoc form .form-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 500px;
+}
+#addoc form .form-input input, #addoc form .form-input select, #addoc form .form-input button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    border-radius: 20px;
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+}
+
+#addoc form .form-input button{
+    color: var(--white);
+    font-weight: 600;
+    height: 50px;
+    border-radius: 25px;
+}
+
+#addoc form .form-input select option{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 40px;
+}

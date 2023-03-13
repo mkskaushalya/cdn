@@ -1,0 +1,682 @@
+#hero .bgimg, #hero .bgoverlay{
+    position: absolute;
+    top: 155px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 155px);
+    z-index: -1;
+    object-fit: cover;
+}
+
+#hero .bgoverlay{
+    background-image: linear-gradient(#17173fbb, #0028, #0026, #0027, #000010aa);
+
+}
+#hero{
+    padding-top: 155px;
+}
+#hero .hom-cont{
+    height: calc(100vh - 155px);
+    width: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    flex-direction: column;
+    /* backdrop-filter: blur(3px); */
+}
+
+#hero .hom-cont .headline, #hero .hom-cont .tagline{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+/* #hero .hom-cont .headline{
+    
+} */
+#hero .hom-cont .headline h1{
+    border-bottom: 4px solid var(--white);
+    max-width: 550px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: var(--white);
+    font-size: 4rem;
+}
+#hero .hom-cont .tagline p{
+    max-width: 550px;
+    text-align: center;
+    color: var(--third-color);
+    font-size: 1.2rem;
+}
+
+#hero .hom-cont .apply-btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding: 5px;
+}
+#hero .hom-cont .apply-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    max-width: 175px;
+    width: 100%;
+    border-radius: 25px;
+    border: 3px solid  var(--white);
+    transition: all ease-in-out 0.3s;
+}
+#hero .hom-cont .apply-btn a:hover{
+    transform: translateY(-3px);
+    background-color: var(--white);
+    color: var(--first-color);
+}
+#hero .hom-cont .apply-btn a span{
+    color: var(--white);
+    transition: all ease-in-out 0.3s;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+#hero .hom-cont .apply-btn a:hover span{
+    color: var(--first-color);
+}
+
+#visionmission{
+    padding: var(--main-padding);
+    padding-top: 4rem;
+    /* padding-bottom: 4rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--grayf0);
+    column-gap: 4rem;
+}
+
+#visionmission .contbox{
+    max-width: 50%;
+    /* width: 400px; */
+    /* min-width: 300px; */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0 0 18px -5px #0004;
+    row-gap: 1rem;
+    /* border: 4px solid var(--first-color); */
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+    padding: 1rem;
+
+}
+
+#visionmission .mission .heading{
+    border-bottom: 3px solid var(--teal);
+    transition: all ease-in-out 0.3s;
+}
+#visionmission .vision .heading{
+    border-bottom: 3px solid var(--blue);
+    transition: all ease-in-out 0.3s;
+}
+#visionmission .mission .heading h2{
+    color: var(--teal);
+    transition: all ease-in-out 0.3s;
+    
+}
+#visionmission .vision .heading h2{
+    color: var(--blue);
+    transition: all ease-in-out 0.3s;
+    
+}
+#visionmission .contbox .text{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+#visionmission .contbox .text p{
+    /* color: var(--first-color); */
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+#visionmission .contbox .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+#visionmission .vision .icon svg{
+    width: 60px;
+    height: 60px;
+    fill: var(--blue);
+    transition: all ease-in-out 0.3s;
+}
+#visionmission .mission .icon svg{
+    width: 60px;
+    height: 60px;
+    fill: var(--teal);
+    transition: all ease-in-out 0.3s;
+}
+
+#visionmission .mission:hover{
+    background-color: var(--teal);
+}
+#visionmission .vision:hover{
+    background-color: var(--blue);
+}
+
+#visionmission .contbox:hover .icon svg{
+    fill: var(--white);
+}
+#visionmission .contbox:hover .text p{
+    color: var(--white);
+}
+#visionmission .contbox:hover .heading h2{
+    color: var(--white);
+}
+#visionmission .contbox:hover .heading{
+    border-bottom: 3px solid var(--white);
+}
+
+#objectives, #weare, #news, #events, #oc{
+    padding: var(--main-padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: var(--grayf0);
+}
+
+.obj-cont{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--white);
+    box-shadow: 0 0 18px -5px #0004;
+    row-gap: 1rem;
+    /* border: 4px solid var(--first-color); */
+    border-radius: 8px;
+    transition: all ease-in-out 0.3s;
+    padding: 1rem;
+}
+
+
+.obj-cont .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.3s;
+}
+
+.obj-cont .icon svg{
+    width: 60px;
+    height: 60px;
+    fill: var(--red);
+    transition: all ease-in-out 0.3s;
+}
+
+.obj-cont:hover{
+    background-color: var(--red);
+}
+.obj-cont:hover .icon svg{
+    fill: var(--white);
+}
+.obj-cont:hover p{
+    color: var(--white);
+}
+.obj-cont:hover h2{
+    color: var(--white);
+}
+
+.obj-cont h2{
+    color: var(--red);
+    transition: all ease-in-out 0.3s;
+    
+}
+.obj-cont p{
+    /* color: var(--first-color); */
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: all ease-in-out 0.3s;
+}
+.obj-cont ul{
+    /* list-style-type: disc;
+    list-style-image: url("./../img/ico/bullseye.svg");
+    font-size: 1.3rem;
+    */
+    transition: all ease-in-out 0.3s;
+    margin-left: 1em; 
+
+}
+.obj-cont ul li::before{
+    
+    transition: all ease-in-out 0.3s;
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    
+}
+.obj-cont:hover ul li::before{
+
+    color: var(--white);
+}
+.obj-cont ul li{
+
+    transition: all ease-in-out 0.3s;
+}
+.obj-cont:hover ul li{
+
+    color: var(--white);
+}
+
+#weare{
+    background-color: var(--white);
+}
+#weare .left{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#weare .right{
+    padding-left: 1rem;
+    width: 70%;
+}
+#weare .left div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+#weare .left .letstalklogo img{
+    height: 100px;
+}
+
+#weare .right p{
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#events{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    
+}
+
+#events .cont{
+    padding-top: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#events .cont div h3{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+
+#news{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+#news h2{
+    color: var(--white);
+}
+
+#news .cont{
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+#news .cont .newscard{
+    height: 855px;
+    width: 350px;
+    background-color: #333;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+#news .cont .newscard .flyer, #news .cont .newscard .flyer img{
+    width: 100%;
+    /* height: 350px; */
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#news .cont .newscard .title{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#news .cont .newscard .title h3{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+    color: var(--white);
+}
+#news .cont .newscard .datetime{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+#news .cont .newscard .datetime span{
+    color: var(--graya);
+    font-size: 0.8rem;
+}
+#news .cont .newscard .description{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+}
+#news .cont .newscard .description p{
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 20px;
+    /* font-size: 15px; */
+    height: 400px;
+
+}
+
+#news .cont .newscard .description p, #news .cont .newscard .description p b, #news .cont .newscard .description i{
+    color: var(--grayaf);
+}
+
+#news .cont .newscard .viewmore{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#news .cont .newscard .viewmore a{
+    color: var(--second-color);
+}
+
+
+
+.contloadbox{
+    width: 100%;
+}
+.contloadbox form{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+.contloadbox form .checkbox{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+    column-gap: 2rem;
+
+}
+.contloadbox form .checkbox .checkboxitem{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+}
+.contloadbox form .checkbox label{
+    font-size: 1.2rem;
+
+}
+.contloadbox form .checkbox input{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    background-color: var(--second-color);
+    
+
+}
+.contloadbox form .searchselect{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+
+}
+.contloadbox form .searchselect{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+
+}
+.contloadbox form .searchselect input{
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid var(--second-color);
+    outline: none;
+    font-size: 1.1rem;
+    padding-left: 10px;
+
+}
+.contloadbox form .searchselect select{
+    /* width: 100%; */
+    height: 40px;
+    border-radius: 20px;
+    max-width: 225px;
+    border: 1px solid var(--second-color);
+    outline: none;
+    font-size: 1rem;
+    padding-left: 10px;
+
+}
+.contloadbox form .searchselect button{
+    max-width: 125px;
+    height: 40px;
+    border-radius: 20px;
+    max-width: 225px;
+    border: 1px solid var(--second-color);
+    background-color: var(--second-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+
+}
+
+
+
+@media (max-width:1920px) {
+    #news .cont .newscard{
+        max-width: 350px;
+    }
+    #news .cont .newscard .flyer, #news .cont .newscard .flyer img{
+        max-height: 350px;
+        max-width: 350px;
+
+}
+}
+
+@media (max-width:768px) {
+    #hero .bgimg, #hero .bgoverlay{
+        top: 55px;
+        height: calc(100vh - 55px);
+    }
+    #hero{
+        padding-top: 55px;
+    }
+    #hero .hom-cont{
+        padding-left: 20px;
+        padding-right: 20px;
+        height: calc(100vh - 55px);
+    }
+    
+    /* #hero .hom-cont{
+        height: calc(100vh - 55px); 
+    } */
+    #hero .hom-cont .headline h1{
+        width: auto;
+        font-size: 2.5rem;
+        max-width: 550px;
+        width: 100%;
+    }
+    #hero .hom-cont .tagline p{
+        max-width: 550px;
+        font-size: 1rem;
+    }
+    
+    #visionmission{
+        flex-direction: column;
+        row-gap: 4rem;
+        
+    }
+    #visionmission .contbox{
+    min-width: 100%;
+    }
+
+    .contloadbox form .checkbox{
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        row-gap: 0.5rem;
+    }
+    .contloadbox form .checkbox .checkboxitem input{
+        width: 20px;
+        height: 20px;
+    }
+    .contloadbox form .checkbox .checkboxitem label{
+        font-size: 1rem;
+    }
+    .contloadbox form .searchselect{
+        flex-direction: column;
+        row-gap: 0.5rem;
+        min-width: 100%;
+    }
+    .contloadbox form .searchselect .searchinput, .contloadbox form .searchselect div{
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .contloadbox form .searchselect .searchinput input, .contloadbox form .searchselect div select, .contloadbox form .submitbtn button{
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+   
+
+    .explorebox .headline{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    #weare{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    #weare .left{
+        width: 100%;
+        justify-content: center;
+    }
+    #weare .right{
+        padding-left: 1rem;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    #weare .left div img{
+        max-width: 250px;
+    }
+    
+    #events .cont{
+        flex-direction: column;
+        row-gap: 50px;
+    }
+}
+
+@media (max-width:520px) {
+    #news .cont .newscard .flyer, #news .cont .newscard .flyer img{
+        max-height: 350px;
+}
+
+#hero .hom-cont{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#hero .hom-cont .headline h1{
+    font-size: 2rem;
+    max-width: 300px;
+    width: 100%;
+}
+#hero .hom-cont .tagline p{
+    max-width: 300px;
+}
+
+}
+@media (max-width:320px) {
+    
+#hero .hom-cont{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#hero .hom-cont .headline h1{
+    font-size: 1.7rem;
+    max-width: 250px;
+}
+#hero .hom-cont .tagline p{
+    max-width: 250px;
+    font-size: 0.8rem;
+}
+
+}

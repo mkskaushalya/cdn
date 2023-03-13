@@ -1,0 +1,165 @@
+.slider{
+    /* background-color: #000; */
+    width: 100%;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider .ctitle{
+    width: 100%;
+    text-align: center;
+    background-color: #F2F3F4;
+    color: #000;
+    padding: 0.5rem 0;
+}
+.slidermain1, .slidermain2, .slidermain3, .slidermain4, .slidermain5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px 18px;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    /* background-color: red; */
+}
+
+.slider-container{
+    height: 100%;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.itemcontmid, .slidermidcont{
+    /* width: 100%; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* background-color: red; */
+    border-radius: 8px;
+}
+.itemleftbtn, .itemnextbtn, .contleftbtn, .contnextbtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    z-index: 1000;
+}
+
+.itemleftbtn a, .itemnextbtn a, .contleftbtn a, .contnextbtn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    transition: all ease-in-out 0.3s;
+}
+
+.itemcard{
+    /* border: 1px solid gray; */
+    padding: 0 10px;
+    border-radius: 8px;
+    /* min-width: 180px; */
+    width: 25%;
+    min-height: 350px;
+    max-width: 400px;
+    /* background-color: #000; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 18px 0px #0005;
+}
+.itemcard .descr{
+    text-align: left;
+    width: 100%;
+    font-size: var(--font1);
+    padding: 0 10px;
+}
+.itemcard .price{
+    text-align: justify;
+    width: 100%;
+    font-size: var(--font2);
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.itemcard .funbtn{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 0;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+.itemcard .funbtn a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: gray;
+}
+.itemcard .funbtn .hurtbtn.active{
+    background-color: magenta;
+}
+
+.itemcard .funbtn a img{
+    width: 35px;
+}
+
+.itemleftbtn a:hover, .itemnextbtn a:hover, .contleftbtn a:hover, .contnextbtn a:hover {
+    transform: scale(1.2);
+  }
+
+  .imageslide{
+    height: 50px;
+  }
+
+ .announcement{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    row-gap: 10px;
+ }
+ .announcement .anntitle{
+    font-weight: 600;
+    font-size: var(--font2);
+ }
+ .announcement .anndesc{
+    font-weight: 500;
+    font-size:var(--font1);
+ }
+
+  @media screen and (max-width: 900px) {
+    .imageslide{
+        height: 100px;
+        min-width: 100px;
+    }
+    .imageslide a{
+        height: 100px;
+        min-width: 100px;
+    }
+    .imageslide a img{
+        height: 100px;
+        min-width: 100px;
+    }
+
+    .announcement{
+        min-width: 100%;
+     }
+  }
+  
+  @media screen and (max-width: 550px) {
+    
+  }
