@@ -1,0 +1,118 @@
+#newspage{
+    padding: var(--main-padding);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--white);
+    padding-top: 160px;
+}
+
+#newspage .cont{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+#newspage .cont .newscard{
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 18px -5px #0004;
+    flex-direction: column;
+    /* max-width: 300px; */
+    width: calc(100%/4 - 20px + 20px/4);
+
+}
+#newspage .cont .newscard .flyer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+#newspage .cont .newscard .flyer img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+
+}
+#newspage .cont .newscard .text{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+#newspage .cont .newscard .text .title{
+    width: 100%;
+}
+#newspage .cont .newscard .text .title h3{
+    width: 100%;
+    font-size: 1.2rem;
+    height: 25px;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 25px;
+}
+#newspage .cont .newscard .text .description p{
+    max-height: 400px;
+    display: -webkit-box;
+    -webkit-line-clamp: 20;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 20px;
+    flex-grow: 1;
+    font-size: 1rem;
+}
+#newspage .cont .newscard .text .description{
+    flex-grow: 1;
+}
+#newspage .cont .newscard .text .datetime{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#newspage .cont .newscard .text .datetime span{
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+@media (max-width:900px) {
+    #newspage .cont .newscard{
+        width: calc(100%/3 - 20px + 20px/3);
+    }
+}
+@media (max-width:768px) {
+    #newspage{
+        padding-top: 60px;
+    }
+
+    #newspage .cont .newscard{
+        width: calc(100%/2 - 20px + 20px/2);
+    }
+}
+@media (max-width:550px) {
+    #newspage{
+        padding-top: 60px;
+    }
+
+    #newspage .cont .newscard{
+        width: 100%;
+    }
+}

@@ -5,8 +5,8 @@ Email : mkskaushalya@gmail.com
 Last Update : 11/02/2023
 Study in Sri Lanka - Web Portal
 */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+@import url('googlenunito.css');
+@import url("faall.min.css");
 :root{
     --first-color: #17173f;
     /* --second-color: #eaa500; */
@@ -19,7 +19,7 @@ Study in Sri Lanka - Web Portal
     --lightyellow: #ffffdd;
     --lightyellow2: #c8c8b9;
     --lightblue: #c4c4ff;
-
+    --subheading-color: #37376f;
     --white: #fff;
 
     /* Special */
@@ -29,7 +29,7 @@ Study in Sri Lanka - Web Portal
     --teal: #20c997;
 
     --font-color : #34495E;
-
+    --link-color: #99f;
     --graya:#aaa;
     --grayaf:#afafaf;
     --graydf:#dfdfdf;
@@ -81,13 +81,18 @@ Study in Sri Lanka - Web Portal
     background: var(--hover-sec-color);
     transition: all ease-in-out 0.3s;
   }
-
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow: hidden scroll;
+}
 section h2{
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2.5rem;
     text-align: center;
+    width: 100%;
 }
 img{
     max-width: 100%;
@@ -106,6 +111,34 @@ button{
 }
 ul{
     list-style: none;
+}
+
+/* Loader */
+.loader {
+    background-color: var(--first-color);
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .loader img {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+  }
+  .hidden {
+    display: none;
+  }
+
+.loaderlogo{
+    position: absolute;
+    /* height: 50px; */
+    max-width: 35px !important;
+    max-height: 35px !important;
+    width: 35px !important;
 }
 .top-navbar{
     position: absolute;
@@ -185,10 +218,10 @@ ul{
     border: 3px solid var(--first-color);
     transition: all ease-in-out 0.3s;
 }
-.top-navbar .search-bar form button:hover{
+/* .top-navbar .search-bar form button:hover{
     color: var(--first-color);
     background-color: transparent;
-}
+} */
 
 
 .top-navbar .login-btn, .top-navbar .login-btn a, .top-navbar .login-btn a span{
@@ -268,6 +301,7 @@ ul{
 }
 .main-navbar ul.mainnavlist a li{
     /* height: 100%; */
+    position: relative;
     display: flex;
     align-items: center;
     /* padding: 0 15px; */
@@ -277,8 +311,31 @@ ul{
 }
 .main-navbar ul.mainnavlist a li:hover{
    color: var(--first-color);
-   text-decoration: underline;
    /* border-bottom: 2px solid var(--first-color); */
+}
+.main-navbar ul.mainnavlist a li::before{
+   content: "";
+   width: 0;
+   height: 2px;
+   border-radius: 1px;
+   position: absolute;
+   background-color: var(--first-color);
+   bottom: 0px;
+   transition: all ease-in-out 0.3s;
+   right: 0;
+}
+.main-navbar ul.mainnavlist a li:hover::before{
+   width: 100%;
+   left: 0;
+}
+
+.main-navbar ul.mainnavlist a.active li{
+   color: var(--second-color);
+}
+.main-navbar ul.mainnavlist a.active li::before{
+    width: 100%;
+    left: 0;
+    background-color: var(--second-color);
 }
 
 
@@ -481,9 +538,14 @@ footer .copy{
 
 }
 footer .copy p{
+    text-align: center;
     color: var(--graydf);
     padding: 1rem 0;
     font-size: 0.8rem;
+
+}
+footer .copy p a{
+    color: #fff;
 
 }
 @media (max-width:1200px) {
