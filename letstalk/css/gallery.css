@@ -1,0 +1,13 @@
+.gallerypage{
+    flex-direction: column;
+    background-color: var(--white) !important;
+    padding-top: 160px !important;
+}
+
+
+
+@media (max-width:768px) {
+    .gallerypage{
+        padding-top: 60px !important;
+    }
+}
