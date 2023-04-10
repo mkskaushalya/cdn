@@ -1,11 +1,20 @@
 /* 
 File Created Date : 07/02/2023
-Programmer : Sahan Kaushalya
+Developer : Sahan Kaushalya
 Email : mkskaushalya@gmail.com
-Last Update : 11/02/2023
-Study in Sri Lanka - Web Portal
+Last Update : 08/04/2023
+LETs talk 2022 website
 */
 @import url("root.css");
 @import url("home.css");
 @import url("admin.css");
 @import url("team.css");
+@import url("about.css");
+@import url("gallery.css");
+@import url("episode.css");
+@import url("events.css");
+@import url("contact.css");
+@import url("news.css");
+@import url("404.css");
+
+/* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 872 264" width="872" height="264"><defs><pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="4" fill="rgba(180, 180, 180, 0.15)" /></pattern></defs><rect fill="url(%23p)" width="872" height="264" /></svg>') */
