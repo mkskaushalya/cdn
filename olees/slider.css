@@ -125,13 +125,13 @@
     background-color: #28B463;
 }
 
-.itemcard .funbtn .ratingbtn .rating-sec{
+.itemcard .funbtn .ratingbtn .rating-sec {
     background-color: gray;
     height: 0;
     width: 50px;
     border-radius: 18px;
     position: absolute;
-    bottom: -45px;
+    bottom: 60px;
     width: 100%;
     left: 0;
     display: flex;
@@ -141,9 +141,7 @@
     column-gap: 5px;
     overflow: hidden;
     transition-delay: 2s;
-    flex-direction: row-reverse;
-    /* transition: all ease-in-out 0.3s; */
-
+    flex-direction: row-reverse
 }
 .itemcard .funbtn .ratingbtn .rating-sec svg{
     width: 0;
