@@ -76,18 +76,22 @@
     padding: 10px;
 }
 .leftbox .cartform .itembox div.sbtotal{
+    position: relative;
     display: flex;
     align-items: center;
     flex-direction: column;
     row-gap: 10px;
+    height: 35px;
 }
 .leftbox .cartform .itembox div.sbtotal .itemdelete{
     position: absolute;
-    margin-left: 90px;
+    right: -10px;
+    width: 35px;
+    height: 35px;
 }
-.leftbox .cartform .itembox div.sbtotal button{
+.leftbox .cartform .itembox div.sbtotal span.cartdelbtn{
     border: none;
-    z-index: 5555;
+    z-index: 900;
     cursor: pointer;
     background-color: red;
     color: #fff;
@@ -96,6 +100,9 @@
     font-size: 1.2rem;
     border-radius: 4px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .leftbox .cartform .itembox span.noitem{
     display: flex;
@@ -121,7 +128,8 @@
     flex-direction: column;
     row-gap: 10px;
 }
-.leftbox .cartform .itembox .calcbox input, .leftbox .cartform .itembox .calcbox button, .cartsec .rightbox .coupon input, .cartsec .rightbox .coupon button, .cartsec .rightbox .checkout a span{
+
+.leftbox .cartform .itembox .calcbox span, .leftbox .cartform .itembox .calcbox button, .cartsec .rightbox .coupon input, .cartsec .rightbox .coupon button, .cartsec .rightbox .checkout a span{
     width: 100%;
     height: 40px;
     font-weight: normal;
@@ -138,7 +146,50 @@
     cursor: pointer;
     
 }
+.leftbox .cartform .itembox .calcbox div.qty{
+    min-width: 100px;
+    background-color: gray;
+    border: 2px solid gray;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;justify-content: space-between;
+}
+.leftbox .cartform .itembox .calcbox div.qty span.qtydec, .leftbox .cartform .itembox .calcbox div.qty span.qtyinc{
+    width: 50px;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0;
+}
+.leftbox .cartform .itembox .calcbox div.qty input.qtyval{
+    width: 100%;
+    min-height: 100%;
+    height: 36px !important;
+    border: none;
+    text-align: center;
+    -moz-appearance: textfield;
+    border-radius: 0;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* font-size: px; */
+    font-weight: 600;
+    outline: none;
+    font-size: 1.1rem;
+}
 
+.leftbox .cartform .itembox .calcbox div.qty input.qtyval::-webkit-outer-spin-button,
+.leftbox .cartform .itembox .calcbox div.qty input.qtyval::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .cartsec .rightbox{
     padding: 10px;
     width: 100%;
@@ -247,7 +298,5 @@
         width: 100%;
         padding: 0;
         max-width: 300px;
-
     }
-
 }
