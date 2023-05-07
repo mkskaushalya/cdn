@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+#checkout {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+
+#checkout form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+#checkout form::before {
+    content: "";
+    width: 1px;
+    height: calc(100% - 20px);
+    background-color: #aaa;
+    top: 10px;
+    position: absolute;
+    left: 60%;
+    transform: translateX(-0.5px);
+
+}
+
+#checkout form .left,
+#checkout form .right {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px 20px;
+
+}
+
+#checkout form .left {
+    width: 60%;
+    row-gap: 15px;
+}
+
+#checkout form .right {
+    width: 40%;
+    row-gap: 15px;
+}
+
+#checkout form .left div {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 6px;
+    row-gap: 6px;
+}
+
+#checkout form div div input,
+#checkout form div div select {
+    height: 40px;
+    width: calc(50% - 3px);
+    border: 1px solid black;
+    border-radius: 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+.selectpayoption input {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+#checkout form .right .orderdetails {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+#checkout form .right .orderdetails .itemrow {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 5px;
+}
+
+#checkout form .right .orderdetails .itemrow img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#checkout form .right .orderdetails .itemrow a {
+    text-decoration: none;
+    flex-grow: 1;
+    color: #000;
+}
+
+#checkout form .right .sbtotalsec {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#checkout form .right .sbtotalsec div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#checkout form .right .total {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#checkout form .right .total .totl {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#checkout form .right .paymentdetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+}
+
+#checkout form .right .paymentdetails div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+#checkout form .right .paymentdetails div.carddetails {
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+#checkout form .right .paymentdetails div.carddetails div {
+    width: 100%;
+    display: flex;
+}
+
+#checkout form .right .paymentdetails div.carddetails div input {
+    width: 100%;
+}
+
+#checkout form .right .paymentdetails div.carddetails div.datencvc {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+#checkout form .right button {
+    background-color: #28B463;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    #checkout form {
+        flex-direction: column;
+    }
+
+    #checkout form .left,
+    #checkout form .right {
+        width: 100%;
+    }
+
+    #checkout form::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #checkout form div div input, #checkout form div div select {
+        width: 100%;
+    }
+}
