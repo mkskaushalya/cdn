@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Calibri";
+  transition: all ease-in-out 0.3s;
 }
 
 :root{
@@ -92,7 +93,12 @@ a{
 /* ======================= */
 
 .logo-bar{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   width: 100%;
+  background-color: #fff;
   height: 120px;
   display: flex;
   align-items: center;
@@ -222,7 +228,7 @@ a{
 
 
 
-.hamburger{
+.hamburger, .head-cart-btn{
   cursor: pointer;
   /* position: fixed;
   float: right; */
@@ -246,7 +252,37 @@ a{
   height: 40px;
 
 }
+.head-cart-btn img{ 
+  height: 30px;
 
+}
+
+.head-cart-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 60px;
+  height: 40px;
+  background-color: #21618C;
+  position: relative;
+}
+
+#cartcounter{
+  position: absolute;
+  min-width: 25px;
+  height: 25px;
+  background-color: #f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 12.5px;
+  padding: 0 2px;
+  bottom: -5px;
+  right: -5px;
+}
 .bannersection{
   padding: 0 20%;
   width: 100%;
@@ -468,19 +504,213 @@ footer .copyright p{
 }
 /* ======================= */
 
+#navclosebtn{
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+}
+.itdescripa{
+  width: 100%;
+  color: black;
+  transition: all ease-in-out 0.3s;
+
+}
+.itdescripa:hover{
+  width: 100%;
+  color: gray;
+
+}
+#itemviewimg{
+  cursor: pointer;
+}
+
+#itemviewbox{
+  padding: 0;
+  margin: 0;
+  background-color: #0004;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  overflow: auto;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#itemviewbox .itemviewcontent .close{
+  /* position: absolute; */
+  color: #aaaaaa;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: end;
+  align-self: flex-end;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+#itemviewbox .itemviewcontent #imgviewslider{
+  width: 100%;
+  max-height: calc(100% - 40px);
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#itemviewbox .itemviewcontent #imgviewslider a:first-child{
+  min-width: 100%;
+  max-height: calc(100% - 40px);
+  /* height: 560px; */
+  display: flex;
+  align-items: center;
+}
+#itemviewbox .itemviewcontent{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 500px;
+  max-height: 600px;
+  width: 100%;
+  height: 100%;
+}
+#itemviewbox .itemviewcontent .close:hover, #itemviewbox .itemviewcontent .close:focus{
+  color: #fff;
+  background-color: #f00;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#poploader{
+  display: none;
+}
+
+.breadcrumbs{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  background-color: #21618C;
+  padding-left: 100px;
+  
+}
+.breadcrumbs a, .breadcrumbs span{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+  height: 25px;
+  
+}
+.breadcrumbs span{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  
+}
+.breadcrumbs span svg{
+  height: 20px;
+  fill: #fff;
+  
+}
+.social{
+  background-color: gray;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.social{
+  background-color: darkgray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  justify-content: space-around;
+}
+.social h3{
+  font-size: 1.2rem;
+  color: #fff;
+  
+}
+.social .sociallink{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+}
+.social .sociallink .socialicon, .social .sociallink .socialicon a{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social .sociallink .socialicon a svg{
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  transition: all ease-in-out 0..3s;
+}
+.social .sociallink .socialicon a:hover svg{
+  transform: translateY(-3px);
+}
+.social .sociallink .socialicon.facebook a:hover svg{
+  fill: #1877f2;
+}
+.social .sociallink .socialicon.youtube a:hover svg{
+  fill: #f00;
+}
+.social .sociallink .socialicon.linkedin a:hover svg{
+  fill: #0a66c2;
+}
+.social .sociallink .socialicon.instagram a:hover svg{
+  fill: magenta;
+}
+.social .sociallink .socialicon.twitter a:hover svg{
+  fill: #1da1f2;
+}
 
 
 @media screen and (max-width: 768px) {
   .bannersection{
     padding: 0 10%;
   }
+  #navclosebtn{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: red;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+  }
   .menubar{
     overflow: hidden;
-    border-radius: 0 8px 8px 0;
     /* display: none; */
-    height: auto;
-    max-width: 350px;
-    position: absolute;
+    height: calc(100% - 70px);
+    /* max-width: 350px; */
+    width: 100%;
+    position: fixed;
     left: -100%;
     top: 70px;
     /* background-color: #ccf7; */
@@ -488,8 +718,7 @@ footer .copyright p{
     z-index: 6;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-    background-color: #CCD1D188 ;
-    
+    background-color: #fff4;
     align-items: flex-start;
   }
   .menubar.active{
@@ -502,19 +731,34 @@ footer .copyright p{
     animation-delay: 0.3s;
   } */
 
-  .hamburger{
+  .hamburger, .head-cart-btn{
     z-index: 7;
     display: flex;
   }
   .menubar ul{
+    max-width: 350px;
     flex-direction: column;
     height: auto;
+    height: 100%;
+    /* border-radius: 0 8px 8px 0; */
+    overflow: hidden;
+    background-color: #CCD1D188 ;
+    justify-content: flex-start;
+
+  }
+  .menubar ul a{
+    height: 45px;
+    text-align: left;
 
   }
   .menubar ul a li{
-    font-size: var(--font8);
+    font-size: 1rem;
     /* padding: 5px 0; */
+    justify-content: flex-start;
+    padding-left: 10px;
+    text-align: left;
     height: 45px;
+    width: 100%;
     border-bottom: 2px solid #0005;
 
   }
