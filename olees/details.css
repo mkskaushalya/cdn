@@ -13,7 +13,8 @@
     padding: 0 0 10px 0;
 }
 .cart-itembox{
-    max-width: 100%;
+    max-width: 768px;
+    width: 100%;
     padding: 20px;
     box-shadow: 0 0 28px -5px #0004;
     border-radius: 8px;
@@ -30,6 +31,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    column-gap: 10px;
 }
 
 .item-details{
@@ -98,6 +100,7 @@
     justify-content: flex-start;
     width: 100%;
     height: 45px;
+    padding-left: 0;
 }
 
 .item-details .backbtn a{
@@ -162,18 +165,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: end;
+    align-self: flex-end;
     float: right;
     font-size: 30px;
     font-weight: bold;
     transition: all 0.3s ease-in-out;
 }
-.popupview .popcontent .imgslider{
+.popupview .popcontent #imgslider{
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    max-height: calc(100% - 40px);
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.popupview .popcontent #imgslider a:first-child{
+    min-width: 100%;
+    max-height: calc(100% - 40px);
+    /* height: 560px; */
+    display: flex;
+    align-items: center;
 }
 .popupview .popcontent{
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: 500px;
     max-height: 600px;
     width: 100%;
@@ -204,6 +223,7 @@
         justify-content: center;
         width: 100%;
         flex-direction: column;
+        column-gap: 0;
     }
     .item-details{
         align-items: center;
