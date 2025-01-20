@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    transition: all ease-in-out 0.3s;
+}
+:root{
+    --primary-color: #E2A653;
+    --secondary-color: #243D84;
+    --tertiary-color: #1E95D3;
+    --quaternary-color: #5B6D76;
+    --success-green-color: #28a745;
+    --quinary-color: #dc3545;
+    --edit-color: #ffc107;
+    
+    --senary-color: #198754;
+    --succes-text: #155724;
+    --succes-bg: #d4edda;
+    --succes-border: #c3e6cb;
+    
+    --error-text: #721c24;
+    --error-bg: #f8d7da;
+    --error-border: #f5c6cb;
+
+    --warning-text: #856404;
+    --warning-bg: #fff3cd;
+    --warning-border: #ffeeba;
+
+    --gray4: #444444;
+    --black: #000000;
+    --white: #ffffff;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--gray4);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    background-color: var(--white);
+    overflow: hidden;
+}
+main{
+    width: 100%;
+    max-width: 600px;
+    top: 60px;
+    background-color: var(--white);
+    position: relative;
+    height: calc(100vh - 120px);
+    overflow: hidden auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main::-webkit-scrollbar{
+    display: none;
+}
+main::-webkit-scrollbar-thumb{
+    display: none;
+}
+main section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100%;
+}
+main section .cont h1{
+    font-size: 30px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+main section .cont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
+    padding-bottom: 60px;
+}
+
+footer{
+    width: 100%;
+    max-width: 600px;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    column-gap: 10px;
+}
+header nav .logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .logo a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav .logo a img{
+    height: 100%;
+    max-height: 40px;
+}
+header nav .search-bar{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #000; */
+    border: 2px solid var(--secondary-color);
+    border-radius: 20px;
+    
+}
+header nav .search-bar input{
+    width: calc(100% - 40px);
+    height: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+header nav .search-bar button{
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+header nav .search-bar button svg{
+    height: 20px;
+    fill: var(--secondary-color);
+}
+header nav .right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10px;
+}
+header nav .right .user-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header nav .right .user-details a{
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: baseline;
+    column-gap: 5px;
+}
+header nav .right .user-details a svg{
+    height: 20px;
+    fill: var(--secondary-color);
+}
+header nav .right .expand-screen{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+header nav .right .expand-screen .full-screen{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+header nav .right .expand-screen .full-screen svg{
+    height: 40px;
+    fill: var(--secondary-color);
+}
+footer nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    max-width: 350px;
+}
+footer nav .item, footer nav .item a{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer nav .item a svg{
+    height: 30px;
+    fill: var(--white);
+}
+footer nav .item.active a svg{
+    fill: var(--primary-color);
+}
+
+
+
+.user-form-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /*background-color: #000;*/
+    
+}
+
+.user-form-section .cont form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.user-form-section .cont form .student-image{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.user-form-section .cont form .student-image .propic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+.user-form-section .cont form .student-image .propic img{
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.user-form-section .cont form .student-image .propic input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.user-form-section .cont form .student-image #student-image-upload{
+    display: none;
+}
+.user-form-section .cont form .student-image .propiclable{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    bottom: 0;
+    background-color: #00005030;
+    
+}
+.user-form-section .cont form .student-image .propiclable .upload-lable{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00000080;
+    row-gap: 5px;
+}
+.user-form-section .cont form .student-image .propiclable .upload-lable svg{
+    height: 20px;
+    fill: var(--white);
+}
+.user-form-section .cont form .student-image .propiclable .upload-lable p{
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 500;
+}
+.user-form-section .cont form .student-details{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+.user-form-section .cont form .student-details .input, .user-form-section .cont form .student-details .button-submit{
+    width: 100%;
+}
+.user-form-section .cont form .student-details .input input, .user-form-section .cont form .student-details .input select{
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+.user-form-section .cont form .student-details .button-submit button{
+    width: 100%;
+    height: 40px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+.user-form-section .cont form .student-details .button-submit button:hover{
+    background-color: var(--white);
+    color: var(--secondary-color);
+}
+
+/* Home section */
+#home .cont > div{
+    width: calc(100% - 10px);
+    /* max-width: 350px; */
+    background-color: var(--secondary-color);
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+#home .cont > div:nth-child(odd){
+    background-color: var(--primary-color);
+}
+#home .cont > div a{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    font-size: 30px;
+    font-weight: 600;
+}
+#home .cont > div:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px 0px;
+}
+
+#login{
+    justify-content: center;
+}
+.search{
+    height: 40px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row !important;
+}
+.search .search-cont{
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    row-gap: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.search .search-cont .input{
+    height: 100% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 5px;
+}
+.search .search-cont .input .search-icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.search .search-cont .input .search-icon svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--secondary-color);
+}
+.search .search-cont .input input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    font-size: 16px;
+    color: var(--secondary-color);
+    text-align: left;
+
+}
+.search .search-cont .input button{
+    /*width: 40px;*/
+    height: 100% !important;
+    padding: 0 15px;
+    border-radius: 0 5px 5px 0 !important;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+}
+
+.student-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.student-list .student-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--white);
+    box-shadow: 0 0 8px 2px #00000020;
+    transition: all 0.3s ease-in-out;
+}
+.student-list .student-card.verifyed{
+    background-color: var(--succes-bg);
+    border: 1px solid var(--succes-border);
+}
+.student-list .student-card.edit{
+    background-color: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+}
+.student-list .student-card .student-image{
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.student-list .student-card .student-image img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.student-list .student-card a{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.student-list .student-card a .student-details{
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 0 0 10px;
+    row-gap: 5px;
+}
+.student-list .student-card a .student-details > div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    column-gap: 5px;
+}
+.student-list .student-card a .student-details .row1 span{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 15px;
+    color: var(--secondary-color);
+}
+.student-list .student-card a .student-details .row2 span{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 12px;
+    color: var(--secondary-color);
+}
+.student-list .student-card a .student-details .row3 span{
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 12px;
+    color: var(--gray4);
+}
+.student-list .student-card .student-action{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    justify-content: center;
+}
+.student-list .student-card .student-action a{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+}
+.student-list .student-card .student-action a button{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s ease-in-out;
+}
+.student-list .student-card .student-action a button.print{
+    background-color: var(--secondary-color);
+    
+}
+.student-list .student-card .student-action a button.edit{
+    background-color: var(--edit-color);
+    
+}
+.student-list .student-card .student-action a button.delete{
+    background-color: var(--quinary-color);
+}
+
+#update-form{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    padding: 10px;
+    background-color: #ffffffaa;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    overflow: auto;
+    padding-bottom: 20px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+#update-form::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+}
+
+#update-form.hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#update-form .close-btn{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#update-form .close-btn svg{
+    width: 40px;
+    height: 40px;
+    fill: var(--quinary-color);   
+}
+#update-form .student-image{
+    min-height: 200px;
+}
+.msg-bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px 2px #00000020;
+    transition: all 0.3s ease-in-out;
+}
+.msg-bar.error{
+    background-color: var(--error-bg);
+    border: 1px solid var(--error-border);
+    color: var(--error-text);
+}
+.msg-bar.success{
+    background-color: var(--succes-bg);
+    border: 1px solid var(--succes-border);
+    color: var(--succes-text);
+}
+.msg-bar.warning{
+    background-color: var(--warning-bg);
+    border: 1px solid var(--warning-border);
+    color: var(--warning-text);
+}
