@@ -1,4 +1,4 @@
-const root = "/SLTCSDCOUT/";
+const root = "/";
 let profilePicUpload = document.getElementById('student-image-upload');
 let profilePic = document.getElementById('student-pro-pic');
 profilePicUpload.onchange = function(){

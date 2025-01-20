@@ -1,4 +1,4 @@
-const root = "/SLTCSDCOUT/";
+const root = "/";
 $(document).ready(function(){
     document.querySelector(".loader").classList.remove("hidden");
     $.ajax({
