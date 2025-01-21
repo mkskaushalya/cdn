@@ -8,6 +8,14 @@ function printStudent(regnumber){
   document.title = oldpagetitle;
   
 }
+function printBulk(pagenumber){
+  var oldpagetitle = document.title;
+  document.title = pagenumber;
+  var iframe = document.getElementById('frame-bulk').contentWindow;
+  iframe.focus();
+  iframe.print();
+  document.title = oldpagetitle;
+}
 function printStudentImage(regnumber){
   // var oldpagetitle = document.title;
   // document.title = "Print_Student_" + regnumber;
